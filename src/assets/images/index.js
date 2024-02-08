@@ -16,6 +16,12 @@ export { default as  ViewerTwo} from './viewers-pixar.png'
 export { default as  ViewerThree} from './viewers-marvel.png'
 export { default as  ViewerFour} from './viewers-starwars.png'
 export { default as  ViewerFive} from './viewers-national.png'
+export { default as  PlayIconButton} from './play-icon-black.png'
+export { default as  TrailerIconButton} from './play-icon-white.png'
+export { default as  GroupIconButton} from './group-icon.png'
+
+
+
 
 
 

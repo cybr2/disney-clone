@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { HomeBackGround } from "../assets/images"
 import ImgSlider from "./ImgSlider"
 import Viewers from "./Viewers"
+import Movies from "./Movies"
 
 const Home = () => {
   
@@ -9,6 +10,7 @@ const Home = () => {
     <Container>
       <ImgSlider/>
       <Viewers/>
+      <Movies/>
     </Container>
   )
 }
