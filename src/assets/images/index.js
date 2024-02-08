@@ -19,6 +19,10 @@ export { default as  ViewerFive} from './viewers-national.png'
 export { default as  PlayIconButton} from './play-icon-black.png'
 export { default as  TrailerIconButton} from './play-icon-white.png'
 export { default as  GroupIconButton} from './group-icon.png'
+export { default as  LoginBackground} from './login-background.jpg'
+export { default as  LogoOne} from './cta-logo-one.svg'
+export { default as  LogoTwo} from './cta-logo-two.png'
+
 
 
 
