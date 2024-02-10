@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,regular,500,600,700");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-family: "Hind", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* scroll-snap-align: start;
+  scroll-snap-type: Y mandatory; */
+  position: relative;
+}
+
+body {
+  color: white !important;
+  background-color: #040714 !important;
+}
+
+button {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 15px;
+  line-height: 16.9px;
+  font-weight: 500;
+
+  @media screen and (min-width: 321px) and (max-width: 550px) {
+    font-size: 16.9px;
+    line-height: 22.1px;
+  }
+  @media screen and (min-width: 551px) and (max-width: 990px) {
+    font-size: 19.5px;
+    line-height: 23.4px;
+  }
+  @media screen and (min-width: 991px) and (max-width: 1199px) {
+    font-size: 23.4px;
+    line-height: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 29.9px;
+    line-height: 32.5px;
+  }
+}

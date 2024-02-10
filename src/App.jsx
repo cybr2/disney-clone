@@ -1,11 +1,10 @@
+import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Detail from "./components/Detail"
-import Header from "./components/Header"
-import Home from "./components/Home"
-import Login from "./components/Login";
+import { Header, Home, Login, Detail} from './components';
+import Footer from './components/Footer';
 
 const router = createBrowserRouter([
   {
@@ -23,12 +22,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-
   return (
-    <div className="App">
-      <Header />
-      <RouterProvider router={router} />
-    </div>
+      <div className="App">
+        <Header />
+        <RouterProvider router={router} />
+        <Footer/>
+      </div>
+  
   )
 }
 

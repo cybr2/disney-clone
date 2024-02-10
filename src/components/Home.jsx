@@ -1,10 +1,28 @@
+
+import { useEffect } from "react"
 import styled from "styled-components"
+import {  collection, onSnapshot } from 'firebase/firestore'
+import { db } from "../firebase";
+
+// Initialize Firebase
+
 import { HomeBackGround } from "../assets/images"
-import ImgSlider from "./ImgSlider"
-import Viewers from "./Viewers"
-import Movies from "./Movies"
+import { ImgSlider, Viewers, Movies } from './index'
 
 const Home = () => {
+  useEffect(()=>{
+    const fetchData = async () => {
+      const moviesCollectionRef = collection(db, 'Movies');
+      const unsubscribe = onSnapshot(moviesCollectionRef, (snapshot) => {
+        snapshot.forEach((doc) => {
+          console.log(doc.id, '=>', doc.data());
+        });
+      });
+      
+      return () => unsubscribe(); // Cleanup function
+    };
+    fetchData();
+}, [])
   
   return (
     <Container>
