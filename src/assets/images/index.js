@@ -39,6 +39,7 @@ export { default as  Tv} from './TV.png'
 export { default as  Laptop} from './Laptop.png'
 export { default as  Mobile} from './mobile.png'
 export { default as  Xbox} from './XBOX.png'
+export { default as ShutdownIcon} from './shutdown.svg'
 
 
 

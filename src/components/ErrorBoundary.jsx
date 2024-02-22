@@ -1,11 +1,13 @@
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom' 
 
 const ErrorBoundary = () => {
+  const nav = useNavigate()
   return (
     <Container className="error-boundary">
       <h2>Oops, something went wrong!</h2>
       {/* <p>{error}</p> */}
-      <button onClick={() => window.location.reload()}>Retry</button>
+      <button onClick={() => nav('/')}>Retry</button>
     </Container>
   )
 }

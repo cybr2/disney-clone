@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import { SliderOne, SliderTwo, SliderThree, SliderFour } from '../assets/images';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { BannerAPI } from './API/LocalAPI';
 
 const ImgSlider = () => {
-
-  const sliderScr = [ SliderOne, SliderTwo, SliderThree, SliderFour ]
 
   let settings = {
     dots: true,
@@ -20,9 +18,9 @@ const ImgSlider = () => {
   return (
     <Carousel {...settings}>
     {
-      sliderScr.map((slider, index) => (
+      BannerAPI.map((slider, index) => (
         <Wrap key={index}>
-          <img src={slider} alt="slider Image " />
+          <img src={slider.bannerImg} alt="slider Image " />
         </Wrap>
       ))
     }
@@ -57,7 +55,8 @@ const Carousel = styled(Slider)`
 `
 
 const Wrap = styled.div`
-  cursor: pointer;
+  cursor: default;
+  padding-top: 50px;
 
   img {
     border: 4px solid transparent;

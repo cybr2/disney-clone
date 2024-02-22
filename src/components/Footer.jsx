@@ -27,7 +27,7 @@ const Footer = () => {
                     <li><p>The Disney Bundle</p></li>
                 </Nav>
                 <Copyright>
-                    <p>© DisneyPlus-JSStack. All Rights Reserved 2024</p>
+                    <p>© DisneyPlus-CYBR. All Rights Reserved 2024</p>
                 </Copyright>
 
             </Container>
